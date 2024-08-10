@@ -1,0 +1,144 @@
+# -- Main Menu --
+# The main menu is displayed in the header at the top of the page.
+# Acceptable parameters are name, pageRef, page, url, title, weight.
+# 
+# The simplest menu configuration is to provide:
+#   name = The name to be displayed for this menu link
+#   pageRef = The identifier of the page or section to link to
+#
+# By default the menu is ordered alphabetically. This can be
+# overridden by providing a weight value. The menu will then be
+# ordered by weight from lowest to highest.
+
+# [[main]]
+#  name = "Blog"
+#  pageRef = "posts"
+#  weight = 10
+
+[[main]]
+ name = "หน้าแรก"
+ identifier = "home"
+ pre = "home"
+ pageRef = "/"
+ weight = 1
+
+[[main]]
+ name = "รวมเว็บ"
+ identifier = "external-web"
+ pre = ""
+ weight = 10
+
+[[main]]
+ name = "จองห้องกลางสโม"
+ identifier = "booking-samo"
+ parent = "external-web"
+ pre = "calendar"
+ url = "https://rbooking.appinfor.org/"
+ weight = 10
+
+ [[main]]
+ name = "ฝ่ายพัฒนานักศึกษา"
+ parent = "external-web"
+ identifier = "student-affair"
+ pre = "users"
+ url = "https://studentaffairs.md.kku.ac.th/"
+ weight = 11
+
+#  [[main]]
+#  name = "ติดตาม"
+#  identifier = "follow-up"
+#  pre = "queue-list"
+#  weight = 50
+
+# [[main]]
+#  name = "f"
+#  parent = "follow-up"
+#  identifier = ""
+#  pre = "queue-list"
+#  weight = 50
+
+
+[[main]]
+ name = "โครงการ"
+ identifier = "project"
+ pre = "pencil-sq"
+ weight = 50
+
+[[main]]
+ name = "Project Guidebook"
+ identifier = "project-guidebook"
+ parent = "project"
+ pre = "book-open"
+ weight = 10
+ url = "https://www.canva.com/design/DAGGq42Vqn8/lWKW-svnKWCiV0KByTWTjw/view?utm_content=DA"
+
+[[main]]
+ name = "แจ้งปัญหา Guidebook"
+ identifier = "report-guidebook"
+ parent = "project"
+ pre = "caution"
+ weight = 20
+ url = "https://forms.gle/rhLpcKWoW6r4roGi8"
+
+[[main]]
+ name = "ติดตามโครงการ"
+ identifier = "project-follow"
+ parent = "project"
+ pre = "queue-list"
+ weight = 30
+ url = "https://docs.google.com/spreadsheets/d/19AXI2Hmnt4u_zAU7wMvJbhehU5ShuRp0FuWsWMrgDM4/edit?gid=1417713928#gid=1417713928"
+
+
+[[main]]
+ name = "เอกสาร"
+ identifier = "documents"
+ pre = "document"
+ url = "https://drive.google.com/drive/folders/11tEfwkvX2W3Kl3VTnhD721suzwTpO4UC"
+ weight = 100
+
+# [[main]]
+#  name = "example sub-menu 1"
+#  parent = "status"
+#  weight = 20
+
+# [[main]]
+#  name = "example sub-menu 2"
+#  parent = "status"
+#  weight = 20
+
+# [[subnavigation]]
+#  name = "An interesting topic"
+#  pageRef = "tags/interesting-topic"
+#  weight = 10
+
+# [[subnavigation]]
+#  name = "My Awesome Category"
+#  pre = "github"
+#  pageRef = "categories/awesome"
+#  weight = 20
+
+#[[main]]
+#  name = "Categories"
+#  pageRef = "categories"
+#  weight = 20
+
+#[[main]]
+#  name = "Tags"
+#  pageRef = "tags"
+#  weight = 30
+
+
+# -- Footer Menu --
+# The footer menu is displayed at the bottom of the page, just before
+# the copyright notice. Configure as per the main menu above.
+
+
+# [[footer]]
+#   name = "Tags"
+#   pageRef = "tags"
+#   weight = 10
+
+# [[footer]]
+#   name = "Categories"
+#   pageRef = "categories"
+#   weight = 20

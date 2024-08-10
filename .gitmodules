@@ -1,0 +1,4 @@
+[submodule "themes/blowfish"]
+	path = themes/blowfish
+	url = https://github.com/MD-KKU-SAMO/samo-linktree-blowfish.git
+	branch = main

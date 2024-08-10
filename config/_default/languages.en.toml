@@ -1,0 +1,27 @@
+
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = ""
+
+[params]
+  displayName = "EN"
+  isoCode = "en"
+  rtl = false
+  dateFormat = "2 January 2006"
+  # logo = "img/samo-logo.jpg"
+  # secondaryLogo = "img/secondary-logo.png"
+  description = "My awesome website"
+  copyright = "***Made with love and cat memes.*** © 2024 Medical Students' Union of Khon Kaen University"
+
+[author]
+  name = "Samo Linktree"
+  image = "img/samo-logo.jpg"
+  headline = "สโมสรนักศึกษาแพทย์ มหาวิทยาลัยขอนแก่น"
+  # bio = "Medical Students' Union of Khon Kaen University"
+  links = [
+    { facebook = "https://web.facebook.com/mdkkustudentunion" },
+    { instagram = "https://www.instagram.com/mdkkusamo/" },
+    { calendar = "https://rbooking.appinfor.org/" },
+    { users = "https://studentaffairs.md.kku.ac.th/" },
+  ]
